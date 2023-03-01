@@ -12,9 +12,33 @@
 
     &-items {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        
 
         gap: 80px;
     }
+
+    @media (max-width:1319px) {
+        &-items {
+            gap: 40px;
+        }
+      }
+
+      @media (max-width:1158px){
+        &-items {
+            gap: 20px;
+        }
+      }
+
+      @media (max-width:1078px){
+        &-items {
+            gap: 10px;
+        }
+      }
+
+      
+      @media (max-width:1078px){
+        &-items {
+            gap: 5px;
+        }
+      }
 }

@@ -83,5 +83,15 @@
 
     }
 
+    @media (max-width:1200px){
+        &__wrapper {
+            padding-right: 70px;
+        }
+
+        &__main-info  {
+            margin-left: 50px;
+        }
+    }
+
     
 }   

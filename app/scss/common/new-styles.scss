@@ -106,5 +106,33 @@
         }
     }
 
+    @media (max-width:1439px){
+        .block-second {
+            width: 312px;
+            height: 624px;
+            overflow-x: hidden;
+
+            width: 624px;
+            justify-content: center;
+            
+            &__img-last {
+                order: -1;
+            }
+
+            &__btn {
+                order: -1;
+                left: 0;
+                margin: 0;
+            }
+        }
+
+        &__text {
+            position: initial;
+            width: 45px;
+        }
+
+        
+    }
+
     
 }

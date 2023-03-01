@@ -78,7 +78,8 @@
         justify-content: space-between;
     }
 
-    &__item {
+    &__item,
+    &__item-glass {
         display: block;
 
         .text {
@@ -394,6 +395,25 @@
         margin-right: 11px;
     }
 
+    @media (max-width:1319px){
+        &__items {
+            justify-content: space-evenly;
+        }
+
+        &__button {
+            margin-left: 734px;
+        }
+    }
+
+    @media (max-width:1299px) {
+        &__button {
+            margin-left: 716px;
+            position: absolute;
+            right: 0;
+            margin-right: 75px;
+        }
+   
+    }
     
 
    

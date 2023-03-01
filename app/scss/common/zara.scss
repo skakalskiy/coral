@@ -42,6 +42,44 @@
         }
     }
 
+    @media (max-width:1919px) {
+        background: url(../../img/background-zaraa.png) center center  no-repeat;
+        width: auto;
+    
+        &__subtitle {
+            font-size: 1.354vw;
+        }
+    
+        &__button {
+            
+            &-link {
+                font-size: 1.510vw;
+            }
+        }
+       }
+    
+       @media (max-width:1628px){
+            &__content {
+                margin-left: 900.17px;
+                background-size: contain;
+                
+            }
+       }
+
+       @media (max-width:1360px) {
+        &__content {
+            margin-left: 500px;
+            background-size: contain;
+            padding: 201px;
+        }   
+       }
+
+       @media (max-width:1160px){
+        &__content {
+            margin-left: 400px;
+        }
+       }
+
   
    
 }

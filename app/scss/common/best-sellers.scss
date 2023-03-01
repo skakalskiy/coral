@@ -101,4 +101,23 @@
 
         margin-left: 12px;
     }
+
+    
+    @media (max-width:1320px){
+        &__button {
+            position: absolute;
+            right: 0;
+            margin-right: 24px;
+        }
+    }
+
+    @media (max-width:1235px) {
+        &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        
+        gap: 18px;
+        }
+    }
 }
