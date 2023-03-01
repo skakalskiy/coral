@@ -1,0 +1,110 @@
+.new-styles {
+    max-width: 1920px;
+    margin-top: 90px;
+
+    &__wrapper {
+       max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    &__text {
+        width: 52px;
+        height: 648px;
+
+        display: flex;
+        justify-content: flex-start;
+
+        position: absolute;
+        
+       right: calc(100%);
+    
+    }
+
+    &__blocks {
+        display: flex;
+
+        .block-first {
+            display: flex;
+            margin-right: 24px;
+            position: relative;
+           
+            &__text {
+                writing-mode: vertical-lr;
+                transform: rotate(180deg);
+
+                font-size: 34px;
+                font-weight: 400;
+                line-height: 39.84px;
+
+                color: #000;
+
+                margin-bottom: 30px;
+            }
+
+            &__image {
+                width: 648px;
+
+                &__image-container {
+                    padding-top: 112.35%;
+                    position: relative;
+
+                    .img {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        
+                    }
+                }
+            }
+        }
+
+        .block-second {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 24px;
+            
+
+            &__btn {
+                background: #1E2832;
+                color: #fff;
+
+                height: 52px;
+                width: 315px;
+
+                display: flex;
+
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            
+                margin-right: 300px;
+
+                justify-content: space-between;
+                align-items: center;
+
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 21.79px;
+
+                position: relative;
+                left: 336px;
+                bottom: 76px;
+
+                .btn-link-one {
+                    margin-left: 11px;
+                }
+
+                .btn-link-two {
+                    margin-right: 10px;
+                }
+                
+            }
+        }
+    }
+
+    
+}

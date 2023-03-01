@@ -1,0 +1,47 @@
+.zara {
+    
+    background: url(../../img/background-zaraa.png) center center  no-repeat;
+    max-width: 1920px;
+  
+    height: 776px;
+    background-size: contain;
+    margin-top: 70px;
+    
+
+    &__content {
+        margin-left: 1200.17px;
+        padding-top: 261px;
+    }
+
+    &__img {
+        height: 81px;
+        margin-bottom: 56px;
+    }
+
+    &__subtitle {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 30.47px;
+
+        color: #fff;
+
+        margin-bottom: 66px;
+    }
+
+    &__button {
+        background: #fff;
+
+        display: block;
+        &-link{
+            color: #000;
+            font-size: 29px;
+            font-weight: 400;
+            line-height: 55px;
+
+            padding: 9px 30px 8px;
+        }
+    }
+
+  
+   
+}
