@@ -96,6 +96,21 @@
             grid-template-columns: 1fr 1fr 1fr;
             justify-items: center;
             margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        .sub-title {
+
+        }
+    }
+
+    @media (max-width:911px) {
+        &__title {
+            text-align: center;
+        }
+
+        .sub-title {
+            text-align: center;
         }
     }
 

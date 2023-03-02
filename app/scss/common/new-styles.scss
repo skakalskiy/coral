@@ -134,5 +134,47 @@
         
     }
 
+    @media (max-width:1024px){
+        &__blocks {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+
+        .block-first {
+            
+        }
+        .block-second {
+            max-width: 1024px;
+            margin-top: 30px;
+            width: 1024px;
+            height: 100%;
+            gap: 30px;
+
+            flex-wrap: wrap;
+           
+           
+            &__btn {
+                position: relative;
+                width: 312px;
+                top: 260px;
+                left: -173px;
+            }
+            
+            &__img-last {
+                position: relative;
+                left: 169px;
+            }
+
+            &__img-first {
+                position: relative;
+                left: -172px;
+            }
+            
+            
+        }
+
+    }
+
     
 }

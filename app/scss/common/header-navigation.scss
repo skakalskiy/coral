@@ -18,6 +18,8 @@
         align-self: flex-start;
     }
 
+    
+
     &__logo-block {
         display: flex;
         align-items: center;
@@ -60,5 +62,17 @@
 
     &__account-text {
         margin-right: 27px;
+    }
+
+    @media (max-width:1024px) {
+        &__links-block {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        & {
+            margin: 0 10px;
+        }
     }
 }

@@ -79,5 +79,16 @@
         gap: 10px;
     }
 
+    @media (max-width:840px) {
+       &__wrapper {
+        gap: 10px;
+        flex-wrap: wrap;
+       } 
+
+       &-text {
+        width: 200px;
+       }
+    }
+
 
 }

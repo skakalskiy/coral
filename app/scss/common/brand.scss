@@ -41,4 +41,12 @@
             gap: 5px;
         }
       }
+
+      @media (max-width:1024px){
+        &-items {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+    }
+
 }
