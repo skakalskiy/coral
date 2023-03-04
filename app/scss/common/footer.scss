@@ -90,5 +90,19 @@
        }
     }
 
+    
+    @media (max-width:600px) {
+        &__wrapper {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         margin-left: 10px;
+         gap: 50px;
+        } 
+ 
+        &-text {
+         
+        }
+     }
+
 
 }

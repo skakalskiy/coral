@@ -47,7 +47,7 @@
         width: auto;
     
         &__subtitle {
-            font-size: 1.354vw;
+            font-size: 1.35vw;
         }
     
         &__button {
@@ -89,14 +89,30 @@
        @media (max-width:1088px) {
             &__subtitle {
                 width: 600px;
+                font-size: 18px;
+            }
+
+            &__button-link {
+                font-size: 18px;
             }
        }
 
         
        @media (max-width:953px) {
             &__button-link {
-                
                 padding: 5px 15px;
+            }
+
+            &__subtitle {
+                font-size: 18px;
+            }
+
+            &__button-link {
+                font-size: 18px;
+            }
+
+            &__button {
+                width: 200px;
             }
         }
 
@@ -108,23 +124,72 @@
         }
 
         &__button {
-            width: 130px;
+            width: 200ppx;
         }
 
         &__content {
             margin-left: 300px;
         }
+
+       
        }
 
        @media (max-width:815px) {
             &__content {
                 margin-left: 200px;
             }
-        }   
+        }
+
+        @media (max-width:767px) {
+           background: none;
+           background: #000;
+
+           &__content {
+                margin: 0 auto;
+                padding: 200px 300px;
+            }
+           
+        }
+
+        @media (max-width:767px) {
+            background: none;
+            background: #000;
+
+            &__content {
+                position: relative;
+                left: -100px;
+
+            }
+        }
+
+        @media (max-width:573px) {
+            &__content {
+                left: -170px;
+            }
+        }
+
+        @media (max-width:490px) {
+            &__content {
+                left: -200px;
+            }
+
+            &__subtitle {
+                font-size: 14px;
+            }
+            &__button {
+                &__button-link {
+                    font-size: 14px;
+                    padding: 10px 10px;
+                }
+                
+            }
+
+        }
+        
+       
 
        
-       
-   }
+    }
 
   
    

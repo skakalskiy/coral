@@ -414,6 +414,23 @@
         }
    
     }
+
+    @media (max-width:767px) {
+       &__button {
+        margin-right: 24px;
+       }
+    }
+
+    
+    @media (max-width:500px) {
+        &__block-links {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         width: 300px;
+         gap: 10px;
+        }
+    }
+     
     
 
    

@@ -31,6 +31,8 @@
         color: #000;
 
         gap: 10px;
+
+        margin-left: 150px;
     }
 
     &__icon-block {
@@ -75,4 +77,27 @@
             margin: 0 10px;
         }
     }
+
+    @media (max-width:660px) {
+        &__logo-blocks {
+            display: block;
+        }
+
+        &__logo-block {
+            justify-content: center;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+        &__icon-block {
+            justify-content: end;
+            position: relative;
+            bottom: 74px;
+        }
+
+        &__links-block {
+            margin-top: 20px;
+        }
+
+    }   
 }

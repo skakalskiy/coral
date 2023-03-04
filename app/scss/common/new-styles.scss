@@ -141,9 +141,7 @@
             align-items: center;
         }
 
-        .block-first {
-            
-        }
+       
         .block-second {
             max-width: 1024px;
             margin-top: 30px;
@@ -172,6 +170,100 @@
             }
             
             
+        }
+
+    }
+
+    @media (max-width:700px){
+        &__blocks {
+
+            .block-first {
+                height: 400px;
+                
+                &__text {
+                    height: 480px;
+                    font-size: 30px;
+                }
+
+                .img {
+                    width: 500px;
+                    
+                }
+            }
+
+            .block-second {
+               width: 425px;
+                height: 624px;
+                overflow-x: hidden;
+
+                margin-top: 160px;
+    
+                
+                justify-content: center;
+                
+                &__img-last {
+                    order: -1;
+                }
+    
+                &__btn {
+                    order: -1;
+                    left: 0;
+                    top: 0;
+                }
+
+                &__img-last {
+                    position: relative;
+                    left: 1px;
+                }
+
+                &__img-first {
+                    position: relative;
+                    left: -1px;
+                }
+
+                
+            }
+        }
+    }
+
+    @media (max-width:560px) {
+        .block-first {
+           
+            
+            &__text {
+               height: 380px;
+               font-size: 25px;
+            }
+
+            .img {
+                width: 425px;
+                
+            }
+        }
+
+        .block-second {
+           
+        }
+
+    }
+
+    @media (max-width:478px) {
+        .block-first {
+           
+            
+            &__text {
+               height: 380px;
+               font-size: 25px;
+            }
+
+            .img {
+                width: 360px;
+                
+            }
+        }
+
+        .block-second {
+            margin-top: 70px;
         }
 
     }

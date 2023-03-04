@@ -128,4 +128,20 @@
         width: 80px;
       }
     }
+
+    @media (max-width:659px) {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    } 
+    
+      
+    @media (max-width:500px) {
+        &__block-links {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         width: 300px;
+         gap: 10px;
+        }
+     }
 }
