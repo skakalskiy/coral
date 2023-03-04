@@ -76,7 +76,7 @@
 
        @media (max-width:1204px) {
         &__subtitle {
-            width: 600px;
+            width: 400px;
         }
        }
 
@@ -88,7 +88,7 @@
 
        @media (max-width:1088px) {
             &__subtitle {
-                width: 600px;
+                width: 400px;
                 font-size: 18px;
             }
 
@@ -129,6 +129,10 @@
 
         &__content {
             margin-left: 300px;
+        }
+
+        &__subtitle {
+            width: 350px;
         }
 
        
@@ -175,21 +179,32 @@
 
             &__subtitle {
                 font-size: 14px;
+                width: 300px;
             }
             &__button {
                 &__button-link {
                     font-size: 14px;
                     padding: 10px 10px;
                 }
-                
+            }
+        }
+
+        @media (max-width:400px) {
+            &__subtitle {
+                width: 300px
             }
 
-        }
-        
-       
+            &__content {
+                left: -240px;
+            }
+           }
 
-       
-    }
+        @media (max-width:390px) {
+            &__content {
+               left: -270px;
+            }
+        }
 
   
    
+    }

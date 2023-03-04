@@ -98,11 +98,27 @@
          margin-left: 10px;
          gap: 50px;
         } 
- 
-        &-text {
-         
+    }
+
+    @media (max-width:360px) {
+        &__wrapper {
+         gap: 20px;
         }
-     }
+    }
+
+    @media (max-width:360px) {
+        & {
+            margin-top: 40px;
+        }
+
+        .about-us-links {
+            margin-top: 15px;
+        }
+
+        .servies-blocks {
+            margin-top: 15px;
+        }
+    }
 
 
 }

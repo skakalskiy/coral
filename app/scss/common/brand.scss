@@ -47,6 +47,14 @@
           flex-wrap: wrap;
           justify-content: center;
         }
-    }
+      }
+
+      @media (max-width:425px) {
+        
+       
+        & {
+          margin-top: 40px;
+        }
+      }
 
 }

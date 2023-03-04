@@ -124,6 +124,43 @@
         }
     }
 
+    @media (max-width:425px) {
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        .sub-title {
+            margin-top: 30px;
+        }
+      }
+
+      @media (max-width:425px) {
+        &__images {
+            display: flex;
+            flex-direction: column;
+            
+            width: 200px;
+            height: 450px;
+            overflow-x: hidden;
+            
+            justify-content: center;
+            
+        }
+
+        .email-block {
+            flex-direction: column;
+
+            & .sub-input {
+                width: 300px;
+                margin-bottom: 20px;
+            }
+
+            & .sub-button {
+                margin-left: 0;
+            }
+        }
+      }
+
    
 
 
