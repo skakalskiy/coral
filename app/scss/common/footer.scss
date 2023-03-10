@@ -1,124 +1,106 @@
 .footer {
-    max-width: 1920px;
-    margin-top: 141px;
-   
     &__wrapper {
-       max-width: 1320px;
-        margin: 0 auto;
-
         display: flex;
-        justify-content: space-between;
-
-        .catalog-links,
-        .about-us-links,
-        .servies-links {
-            display: flex;
-            flex-direction: column;
-
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-
-            color: #292929;
-            
-            gap: 12px;
-
-            .catalog-link-first,
-            .about-us-link-first,
-            .servies-link-first {
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 18.75px;
-
-                color: #000;
-
-                margin-bottom: 12px;
-            }
-        }
-
-        
     }
 
-    &__logo-blocks {
-        .f-logo-block {
-            display: flex;
-            align-items: center; 
-
-            margin-bottom: 30px;
-        }
-
-        .f-text-block {
-            display: flex;
-            align-items: center;
-
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 20.43px;
-
-            color: #292929;
-            margin-bottom: 39px;
-        }
-
-        .f-icon-block {
-            display: flex;
-            align-items: center;
-
-            gap: 36px;
-            object-fit: contain;
-        }
+    &__logo {
+        margin-bottom: 17px;
     }
 
-    &__logo-title {
-       
-        font-size: 28px;
+    &__text {
+        font-size: 15px;
         font-weight: 400;
-        line-height: 33.6px;
+        line-height: 22.5px;
 
-        color: #000;
+        color: #22262A;
 
-        gap: 10px;
+        margin-bottom: 41px;
     }
 
-    @media (max-width:840px) {
-       &__wrapper {
-        gap: 10px;
-        flex-wrap: wrap;
-       } 
+    &__adress {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
 
-       &-text {
-        width: 200px;
-       }
+        color: #22262A;
+        margin-bottom: 16px;
     }
 
-    
-    @media (max-width:600px) {
-        &__wrapper {
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         margin-left: 10px;
-         gap: 50px;
-        } 
+    .mail {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+
+        color: #22262A;
+        border: 1px solid #000;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding-bottom: 3px;
+        max-width: 207px;
     }
 
-    @media (max-width:360px) {
-        &__wrapper {
-         gap: 20px;
+    .tel-number {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+
+        color: #22262A;
+        margin: 4px 0 16px;
+    }
+
+    &__block2 {
+        margin-left: 196px;
+    }
+
+    &__updates {
+        .update {
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 37.5px;
+
+            color: #22262A;
+            margin-bottom: 24px;
+            margin-left: 88px;
+        }
+
+        .input {
+            max-width: 532px;
+            width: 100%;
+
+            border: none;
+            margin-bottom: 81px;
+            margin-left: 88px;
         }
     }
 
-    @media (max-width:360px) {
-        & {
-            margin-top: 40px;
-        }
-
-        .about-us-links {
-            margin-top: 15px;
-        }
-
-        .servies-blocks {
-            margin-top: 15px;
+    &__nav {
+        display: flex;
+        &:not(:first-child) {
+            margin-left: 88px;
         }
     }
 
+    &__shop {
+        margin-right: 88px;    
+    }
 
+    &__help {
+        margin-right: 88px;
+    }
+
+   .links {
+    display: grid;
+    gap: 21px;
+   }
+
+   .first {
+    margin-bottom: 6px;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+
+    color: #22262A;
+   }
 }
