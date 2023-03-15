@@ -1,4 +1,18 @@
+@import "../static/mixins.scss";
+
+body {
+    background: #010101;
+}
 .wrapper {
-    max-width: 1137px;
     margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 110px;
+
+    @include response (1023px) {
+        padding: 0 24px;
+
+    }
+    @include response (767px) {
+        padding: 0 16px;
+    }
 }

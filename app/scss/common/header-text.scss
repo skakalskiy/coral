@@ -1,0 +1,26 @@
+@import "../static/mixins.scss";
+
+.header-text {
+    margin-top: 254px;
+    
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__title {
+       font-size: 56px;
+       font-weight: 600;
+       line-height: 1.5;
+       
+       color: #E3E4E6;
+    }
+
+    @include response(1023px) {
+        margin-top: 100px;
+    }
+
+
+}

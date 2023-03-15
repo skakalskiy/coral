@@ -1,45 +1,37 @@
 .header {
-    background: url(/img/background.png) center center no-repeat;
-    background-size: contain;
-    max-width: 1593px;
-    height: 745px;
-    margin: 21px auto 123.17px;
-
-
-    &__trend {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 27px;
-
-        color:  #22262A;
-
-        margin-top: 400px;
-        margin-left: 678px;
+    margin-top: 34px;
+    &__wrapper {
+        margin: 0 107px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    &__title {
-        font-size: 80px;
-        font-weight: bold;
-        line-height: 120px;
+    .menu {
+        &__link {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.5;
+            
+            color: #E3E4E6;
+            text-decoration: none;
+        }
 
-        color: #22262A;
+        &__list {
+            list-style: none;
 
-        margin-left: 678px;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            cursor: pointer;
+        }
+
+        &__link:hover {
+            background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
     }
-
-    &__subtitle {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 27px;
-
-        color: #22262A;
-
-        margin-bottom: 31px;
-        margin-left: 678px;
-    }
-
-    .btn {
-        margin-left: 678px;
-        margin-right: 34px;
-    }
+    
 }
