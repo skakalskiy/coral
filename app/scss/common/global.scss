@@ -1,18 +1,18 @@
 @import "../static/mixins.scss";
 
 body {
-    background: #010101;
+    background: linear-gradient(90.35deg, #0c2253 0.36%, #b018c7 156%);
+    
 }
-.wrapper {
-    margin: 0 auto;
-    max-width: 1440px;
-    padding: 0 110px;
 
-    @include response (1023px) {
-        padding: 0 24px;
-
+@include response(1023px) {
+    .wrapper {
+        padding: 0 15px;
     }
-    @include response (767px) {
-        padding: 0 16px;
+}
+
+@include response(767px) {
+    .wrapper {
+        padding: 0 10px;
     }
 }

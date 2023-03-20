@@ -1,37 +1,117 @@
+@import "../static/mixins.scss";
+@import "../static/variable.scss";
+
 .header {
-    margin-top: 34px;
+    margin-top: 40px;
     &__wrapper {
-        margin: 0 107px;
         display: flex;
-        justify-content: space-between;
+        max-width: 1170px;
+        
+        margin: 0 auto;
+        padding: 0 135px;
+    }
+
+    &__logo-block {
+        display: flex;
         align-items: center;
+        .text {
+            margin-left: 7.75px;
+            color: $main-text-color;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1;
+        }
     }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
 
-    .menu {
-        &__link {
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 1.5;
+        .nav {
+            &__items {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+
+                color: $link-color;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1;
+
+                .link:hover {
+                    color: rgb(145, 8, 113);
+                    text-decoration: underline wavy #b018c7;  
+                }
+
+               
+            }
             
-            color: #E3E4E6;
-            text-decoration: none;
+            
+        }
+        
+    }
+
+     .button {
+        padding: 12px 33px 12px 24px;
+        color: $button-color;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+                    
         }
 
-        &__list {
-            list-style: none;
+    .button:hover {
+        background: linear-gradient(90.35deg, #0c2253 156%, #b018c7 0.37%);
+        color: rgb(145, 8, 113);
+    }
 
-            display: flex;
-            align-items: center;
-            gap: 32px;
-            cursor: pointer;
+    @include response(767px) {
+        .nav {
+            &__items {
+                gap: 10px;
+            }
         }
+        
+    }
 
-        &__link:hover {
-            background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+    @include response(520px) {
+        margin-top: 10px;
+        &__wrapper {
+            flex-wrap: wrap;
+            .nav {
+                &__items {
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
         }
     }
+
     
+    @include response(425px) {
+
+        &__wrapper {
+            flex-wrap: wrap;
+            .nav {
+                &__items {
+                    width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                }
+            }
+
+            .button {
+                width: 100%;
+                align-self: flex-end;
+                margin-top:10px;
+            }
+        }
+
+        &__logo-block {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
 }

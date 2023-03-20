@@ -1,59 +1,55 @@
 @import "../static/mixins.scss";
+@import "../static/variable.scss";
 
 .copyright {
-    margin-top: 188.5px;
-    text-align: center;
-
-    &__title {
-        font-size: 56px;
-        font-weight: 600;
-        line-height: 1.5;
-
-        color: #E3E4E6;
+    margin: 66px 0 36px;
+    
+    &__wrapper {
+        max-width: 1170px;
+        
+        margin: 0 auto;
+        padding: 0 130px;
+        display: flex;
+        
     }
 
-    &__subtitle {
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1.5;
+    &__list {
+        width: 50%;
 
-        color: #E3E4E6;
-        opacity: 0.5;
-    }
-
-    .icon-block {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
 
-        gap: 72px;
-        margin-top: 30px;
-        margin-bottom: 15px;
+        font-size: 14px;
+        font-weight: $font-weight;
+        line-height: 0.7;
+
+        color: $main-text-color;
+
+       gap: 54px;
+
+       
     }
 
     &__text {
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1.5;
+        width: 50%;
 
-        color: #E3E4E6;
-        opacity: 0.5;
+        
+        font-size: 14px;
+        font-weight: $font-weight;
+        line-height: 0.84;
+
+        color: $main-text-color;
     }
-    @include response(1023px) {
-        margin-top: 100px;
-    }
-    
 
     @include response(424px) {
-        .icon-block {
-            flex-wrap: wrap;
+        &__list {
             gap: 10px;
-        }
-        .icon {
-            width: 25%;
         }
     }
 
-   
+
 }
+
+
 
